@@ -11,7 +11,24 @@ public class UniqueChars {
      * unless they are space characters.
      */
     public static String uniqueChars(String s) {
-        // Replace the following statement with your code
-        return null;
+        String Newstr = "";
+        for (int i = 0; i < s.length(); i++){
+            char first = s.charAt(i);
+            for (int j = i + 1;  j < s.length(); j++){
+                if (s.charAt(j)== first){
+                    char Notneeded  = 1;
+                    s=s.substring(0, j)+Notneeded+s.substring(j+1);
+                    s.
+                }
+            }
+        }
+        for (int u = 0; u < s.length(); u++){
+            if (s.charAt(u) != 1 ){
+                char good = s.charAt(u);
+                Newstr += good;
+            }
+        }
+        return Newstr;
     }
+
 }
