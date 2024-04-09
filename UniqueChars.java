@@ -15,7 +15,7 @@ public class UniqueChars {
         for (int i = 0; i < s.length(); i++) {
             char first = s.charAt(i);
             for (int j = i + 1; j < s.length(); j++) {
-                if (s.charAt(j) == first) {
+                if (s.charAt(j) == first && s.charAt(j) != ' ') {
                     char Notneeded = 1;
                     s = s.substring(0, j) + Notneeded + s.substring(j + 1);
                 }
